@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  transition: background-color 0.4s ease;
+}
+
+.navbar-brand:hover {
+  color:#ffcc00;
+}
+
+.nav-link {
+  margin-left: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+#home:hover {
+  color: #ffcc00;
+}
+
+#about:hover {
+  color: #ffcc00;
+}
+
+#team:hover {
+  color: #ffcc00;
+}
+
+#contact:hover {
+  color: #ffcc00;
+}
+
+/* Team Section */
+.team-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  position: relative;
+}
+
+.team-section h2::after {
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: #ffcc00;
+  display: block;
+  margin: 0.5rem auto 1rem;
+}
+
+.team-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+  filter: brightness(85%);
+}
+
+.card h5 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #222;
+  color: #fff;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .team-section h2 {
+    font-size: 2rem;
+  }
+}
